@@ -1,0 +1,43 @@
+// Обнуление стилей
+@import "nullstyle.scss";
+// Подключение шрифтов
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"); //font-family: 'Raleway', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); //font-family: 'Pacifico', cursive;
+//SCSS
+.main {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+}
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.quadratic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        padding: 20px 0;
+        font-size: 50px;
+    }
+    &__equation {
+        padding: 50px 0;
+        p {
+            display: inline-block;
+        }
+    }
+    &__input {
+        font-size: 25px;
+        width: 50px;
+        border: 1px solid #000;
+        text-align: center;
+    }
+    &__counter {
+    }
+    &__button {
+        font-size: 30px;
+        padding: 10px 20px;
+        background-color: rgb(255, 187, 0);
+        border-radius: 5px;
+    }
+}
