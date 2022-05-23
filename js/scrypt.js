@@ -15,5 +15,15 @@ quadraticButton.addEventListener("click", function (e) {
 
     var D = (b * b) - 4 * (a * c);
     console.log(D);
-    discriminant.innerHTML = `Корень дискриминанта = ${D}`;
+
+    if (D < 0) {
+        discriminant.innerHTML = `Дискриминант = ${D} <p>Дискриминант < 0</p> <p>Корней нет</p>`;
+    } else if (D == 0) {
+        var rootFirst = -1 * (b / 2 * a);
+        discriminant.innerHTML = `Дискриминант = ${D} <p>X = ${rootFirst}</p>`;
+    } else if (D > 0) {
+        var rootFirst = (-b - Math.sqrt(D)) / (2 * a);
+        var rootSecond = (-b + Math.sqrt(D)) / (2 * a);
+        discriminant.innerHTML = `<p>Дискриминант = ${D}</p> <p>Первый корень X ≈ ${rootFirst.toFixed(3)}</p> <p>Второй корень X ≈ ${rootSecond.toFixed(3)}</p>`;
+    }
 });

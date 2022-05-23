@@ -41,3 +41,22 @@
         border-radius: 5px;
     }
 }
+
+.roots {
+    padding: 20px 0;
+    &__discriminant {
+        text-align: center;
+        p{
+            padding: 10px 0;
+            &:last-child{
+                padding: 0;
+            }
+        }
+    }
+
+    &__first {
+    }
+
+    &__second {
+    }
+}

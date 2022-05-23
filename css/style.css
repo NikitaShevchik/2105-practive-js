@@ -124,3 +124,19 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ffbb00;
   border-radius: 5px;
 }
+
+.roots {
+  padding: 20px 0;
+}
+
+.roots__discriminant {
+  text-align: center;
+}
+
+.roots__discriminant p {
+  padding: 10px 0;
+}
+
+.roots__discriminant p:last-child {
+  padding: 0;
+}
